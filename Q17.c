@@ -11,18 +11,18 @@ int main() {
     discriminant = b * b - 4 * a * c;
 
     if (discriminant > 0) {
-        // Two distinct real roots
+        
         root1 = (-b + sqrt(discriminant)) / (2 * a);
         root2 = (-b - sqrt(discriminant)) / (2 * a);
         printf("Roots are real and different.\n");
         printf("Root 1 = %.2lf\nRoot 2 = %.2lf\n", root1, root2);
     } else if (discriminant == 0) {
-        // One real root (both roots are equal)
+        
         root1 = -b / (2 * a);
         printf("Roots are real and equal.\n");
         printf("Root 1 = Root 2 = %.2lf\n", root1);
     } else {
-        // Complex conjugate roots
+        
         realPart = -b / (2 * a);
         imagPart = sqrt(-discriminant) / (2 * a);
         printf("Roots are complex and different.\n");
