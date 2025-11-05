@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main(){
+    int n,even_count=0,odd_count=0;
+    printf("enter the number =");
+    scanf("%d",&n);
+    int arr[n];
+    for(int i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+    }
+    for(int i=0;i<n;i++){
+        if(arr[i]%2==0){
+            even_count++;
+        }
+        else{
+            odd_count++;
+        }
+    }
+    printf("Total EVEN NUMBER =%d\n",even_count);
+    printf("Total ODD NUMBER =%d\n",odd_count);
+    return 0;
+}
