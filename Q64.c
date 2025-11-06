@@ -1,4 +1,4 @@
-/*#include<stdio.h>
+#include<stdio.h>
 int main(){
     int n,count1=0,count2=0,count3=0,count4=0,count5=0,count6=0,count7=0,count8=0,count9=0,count0=0;
     printf("enter the number ");
@@ -51,57 +51,4 @@ int main(){
     printf("9=%d\n",count9);
     return 0;
 
-}*/
-
-#include<stdio.h>
-#include<limits.h> 
-
-int main() {
-    int n, temp_n;
-
-    int digit_counts[10] = {0}; 
-    
-    printf("Enter the number: ");
-    scanf("%d", &n);
-    
-    
-    temp_n = n; 
-    
-    
-    if (temp_n == 0) {
-        digit_counts[0] = 1;
-    }
-
-    
-    while (temp_n != 0) {
-        int digit = temp_n % 10; 
-        
-        
-        digit_counts[digit]++;   
-        
-        temp_n /= 10;           
-    }
-    
-
-    
-    int  max_count = -1; 
-    int most_frequent_digit = -1; 
-    for (int i = 0; i < 10; i++) {
-       
-        if (digit_counts[i] >= max_count) {
-            max_count = digit_counts[i]; 
-            most_frequent_digit = i;     
-        }
-    }
-
-    printf("\n--- Digit Frequencies ---\n");
-    for(int i = 0; i < 10; i++) {
-        printf("Digit %d occurred %d times.\n", i, digit_counts[i]);
-    }
-
-    printf("\n--- Result ---\n");
-    printf("The digit that occurs the most times in %d is: %d\n", n, most_frequent_digit);
-    printf("It occurred %d times.\n", max_count);
-    
-    return 0;
 }
