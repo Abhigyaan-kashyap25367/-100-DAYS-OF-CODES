@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+
 
 int main() {
     int n, i, j, k;
@@ -26,7 +26,7 @@ int main() {
         if (areDistinct == 0) break;
     }
 
-    if (areDistinct) {
+    if (areDistinct==1) {
         printf("The elements on the main diagonal are distinct.\n");
     } else {
         printf("The elements on the main diagonal are NOT distinct.\n");
