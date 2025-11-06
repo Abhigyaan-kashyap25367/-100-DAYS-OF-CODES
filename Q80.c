@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+
 
 int main() {
     int r1, c1, r2, c2, i, j, k;
@@ -28,7 +28,6 @@ int main() {
             scanf("%d", &matB[i][j]);
         }
     }
-    
     int result[r1][c2];
     
     for (i = 0; i < r1; i++) {
