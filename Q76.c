@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+
 
 int main() {
     int rows, cols, i, j;
@@ -36,7 +36,7 @@ int main() {
         printf("\n");
     }
     
-    if (isSymmetric) {
+    if (isSymmetric==1) {
         printf("The matrix is symmetric.\n");
     } else {
         printf("The matrix is NOT symmetric.\n");
