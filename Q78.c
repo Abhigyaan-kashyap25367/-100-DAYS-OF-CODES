@@ -10,7 +10,7 @@ int main() {
     int matrix[n][n];
 
     printf("Enter the matrix elements (%d x %d): \n", n, n);
-    for (i = 0; i < n; i++) {
+    for ( i = 0; i < n; i++) {
         for (j = 0; j < n; j++) {
             scanf("%d", &matrix[i][j]);
         }
