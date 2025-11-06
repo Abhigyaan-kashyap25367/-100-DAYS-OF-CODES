@@ -1,15 +1,13 @@
 #include <stdio.h>
-#include <stdlib.h>
+
 
 int main() {
-    int capacity;
+
     int n, elementToInsert;
     int i;
     
-    printf("Enter the maximum capacity of the array (e.g., 10): ");
-    scanf("%d", &capacity) ;
     
-    printf("Enter the current number of elements (n <= capacity): ");
+    printf("Enter the current number of elements n:  ");
     scanf("%d", &n) ;
    
     int arr[n]; 
